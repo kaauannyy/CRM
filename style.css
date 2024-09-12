@@ -15,6 +15,16 @@ h1 {
     font-size: 35px;
 
 }
+.acabou {
+    margin-left: 35%; 
+    align-items: center;
+    font-family: 'Anton';
+    color: #267fdf;
+    padding: 90px;
+    font-size: 35px;
+    margin-bottom: -55px;
+
+}
 .carol {
     margin-left: 15%; 
     align-items: center;
@@ -124,4 +134,41 @@ h3 {
 h2 {
     font-size: 28px;
 }
+.caixa img {
+    height: 400px;
+}
+.caixa {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-left: 35%;
+}
+.caixa::before, .caixa::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 8s linear alternate infinite;
+}
 
+@keyframes AnimarBorda {
+    0% {
+        background-position: 0;
+    }
+    100%{
+        background-position: 300%;
+    }
+}
+.caixa::after {
+    filter: blur(50px);
+}
