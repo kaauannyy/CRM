@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 3;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+h1 {
+    margin-left: 15%; 
+    align-items: center;
+    font-family: 'Anton';
+    color: #267fdf;
+    padding: 90px;
+    font-size: 35px;
+
+}
+.carol {
+    margin-left: 15%; 
+    align-items: center;
+    font-family: 'Anton';
+    color: #267fdf;
+    padding: 90px;
+    font-size: 40px; 
+    margin-bottom: -100px;
+}
+.texto {
+    margin-left: 15%; 
+    align-items: center;
+    font-family: 'Anton';
+    color: #267fdf;
+    padding: 90px;
+    font-size: 32px;
+}
+.ali {
+    margin-left: 20%; 
+    align-items: center;
+    font-family: 'Anton';
+    color: #267fdf;
+    padding: 90px;
+    font-size: 35px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+a{
+    font-family: 'Merriweather';
+    font-size: 20px;
+    text-align: center;
+   
+
+}
+
+
+p {
+    font-family: 'Merriweather';
+    font-size: 20px;
+    align-items: center;
+    text-indent: 40px;
+}
+
+/* cabeçalho */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff; /* Adicione um fundo para evitar sobreposição de conteúdo */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    
+}
+nav .menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    
+}
+nav .menu a:hover {
+    background-color: #267fdf;
+    border-radius: 30px;
+    color: #ffffff;
+    
+}
+
+nav .logo img{
+    height: 50px;
+   
+}
+
+nav .menu {
+    display: flex;
+   
+}
+
+
+/* Conteudo principal */
+
+.lado {
+    padding: 0 15% 15%;
+}
+
+li {
+    font-size: 20px;
+}
+
+img {
+    margin-left: 0px;
+    width: 100%
+}
+
+h2 , h3{ 
+    color: #267fdf;
+}
+
+h3 {
+    font-size: 22px;
+}
+h2 {
+    font-size: 28px;
+}
+
