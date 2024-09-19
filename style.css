@@ -80,8 +80,8 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #fff; /* Adicione um fundo para evitar sobreposição de conteúdo */
-    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    background-color: #fff; 
+    z-index: 1000;
     
 }
 nav .menu a {
@@ -172,3 +172,112 @@ h2 {
 .caixa::after {
     filter: blur(50px);
 }
+
+
+/* cartao */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 75vh;
+    row-gap: 80px;
+}
+.cards h3{
+    color: #fff;
+}
+.face, .face2, .face3, .face4 , .face5{
+    width: 350px;
+    height: 300px;
+    perspective: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.face p, .face2 p, .face3 p, .face4 p, .face5 p {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.front, .front2, .front3, .front4, .front5, .back, .back2, .back3, .back4, .back5 {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.front2, .front3 {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+ .front3 p {
+    padding-bottom: 55px;
+}
+.front5 p {
+    padding-bottom: 30px;
+}
+
+.front2 p {
+    padding-bottom: 40px;
+}
+
+.front, .front2, .front3, .front4, .front5 {
+    background: #1985dd;
+    z-index: 1;
+}
+
+.back, .back2, .back3, .back4, .back5 {
+    background: #47bff6;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.back p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.back li , .back2 li, .back3 li, .back4 li, .back5 li{
+    font-size: 14px;
+}
+
+.face:hover .front, .face2:hover .front2, .face3:hover .front3, .face4:hover .front4, .face5:hover .front5 {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.face:hover .back, .face2:hover .back2, .face3:hover .back3, .face4:hover .back4, .face5:hover .back5 {
+    transform: rotateY(0);
+    z-index: 1;
+}
+
+
+.imagem-titulo {
+    width: 40px;
+   float: left;
+}
+
+.video {
+    margin-left: 25%;
+    margin-right: 35%;
+}
+
+
