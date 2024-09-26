@@ -271,7 +271,7 @@ h2 {
 
 
 .imagem-titulo {
-    width: 40px;
+    width: 90px;
    float: left;
 }
 
@@ -280,4 +280,50 @@ h2 {
     margin-right: 35%;
 }
 
+/* formulario */
+form {
+    background-color: #f1f1f1;
+    text-align: center;
+    border: solid;
+    height: 70%;
+    border-radius: 20px;
+  }
+  .formulario {
+    padding: 56px;
+  }
 
+  label{
+    color: #267fdf;
+    font-weight: bold;
+  }
+
+  input[type=text], input[type=password], input[type=email], input[type=tel] {
+    width: 70%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus {
+    background-color: #267fdf69;
+    
+    
+  }
+  
+button {
+    background-color: #267fdf;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 20px;
+    opacity: 0.9;
+  }
+  
+ button {
+    opacity:1;
+  }
