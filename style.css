@@ -99,7 +99,7 @@ nav .menu a:hover {
 }
 
 nav .logo img{
-    height: 50px;
+    height: 70px;
    
 }
 
@@ -119,6 +119,9 @@ li {
     font-size: 20px;
 }
 
+.lista-lado {
+    margin-left: 80px;
+}
 img {
     margin-left: 0px;
     width: 100%
@@ -194,10 +197,10 @@ h2 {
     justify-content: center;
 }
 
-.face p, .face2 p, .face3 p, .face4 p, .face5 p {
+.face h4, .face2 h4, .face3 h4, .face4 h4, .face5 h4 {
     margin: 0;
     text-align: center;
-    font-size: 24px;
+    font-size: 23px;
 }
 
 .front, .front2, .front3, .front4, .front5, .back, .back2, .back3, .back4, .back5 {
@@ -226,14 +229,14 @@ h2 {
    
 }
 
- .front3 p {
+ .front3 h4 {
     padding-bottom: 55px;
 }
-.front5 p {
+.front5 h4, .front h4 {
     padding-bottom: 30px;
 }
 
-.front2 p {
+.front2 h4 {
     padding-bottom: 40px;
 }
 
